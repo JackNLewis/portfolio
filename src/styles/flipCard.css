@@ -1,0 +1,87 @@
+.flipcard{
+    width: 25rem;
+    height: 30rem;
+    position: relative;
+    overflow: hidden;
+    border-style:none;
+/*     
+    border: solid 1px black;
+    */
+}
+
+
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.01);
+    transition: transform 1s ease;
+}
+
+.flipcard img.hovered{
+    transform: scale(1.1);
+}
+
+.flipcard-info{
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    background-color: rgba(0,0,0,0.65);
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.flipcard-info.hovered{
+    opacity: 1;
+}
+
+.flipcard-info h1{
+    position: absolute;
+    top: 1.5rem;
+    width: 18rem;
+    color: #FF006B;
+}
+
+.flipcard-info p{
+    width: 20rem;
+    height: 15rem;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 7rem;
+    width: 22rem;
+    
+}
+
+.flipcard-info h2{
+    position: absolute;
+    bottom: 4rem;
+    color: #FF006B;
+    padding-top: 1rem;
+    font-weight: 500;
+}
+.flipcard-info h2:after{
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #FF006B;
+}
+.flipcard h1::before{
+    position: absolute;
+    display: block;
+    content: " ";
+    width: 5rem;
+    height: 7rem;
+    top: -1.5rem;
+    right: -6rem;
+    background-color: #FF006B;
+    z-index: 10;
+}
+
+

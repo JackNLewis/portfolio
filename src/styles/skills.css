@@ -1,0 +1,43 @@
+.skills-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EDEDED;
+    text-align: center;
+    padding: 2rem 0 4rem 0;
+}
+
+
+
+.skill-info{
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.skill-info h2{
+    color: #FF006B;
+    margin: 0;
+}
+.skill-info h1{
+    font-size: 2.5rem;
+}
+.skill-info h3{
+    font-weight: 300;
+}
+
+
+.mySwiper{
+    width:100%;
+    height: 27rem;
+}
+
+.swiper-pagination-bullet-active{
+
+    --swiper-theme-color: #FF006B;
+    
+}

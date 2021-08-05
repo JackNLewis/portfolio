@@ -1,0 +1,63 @@
+.nav-container{
+    position: fixed;
+    left: 10%;
+    color: white;
+    background-color:black;
+    width: 13rem;
+    height: 19rem;
+    overflow: hidden;
+    transition: height .5s;
+    z-index: 10;
+}
+
+.nav-container.opened{
+    height: 3rem;
+}
+
+.nav-container h1{
+    margin: 0;
+    padding: 0.5rem 0 0 0.1rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
+
+.nav-container ul{
+    margin: 0;
+    list-style: none;
+    padding-inline-start: 1.2rem;
+}
+
+.nav-container a{
+    position: relative;
+    left: 0;
+    transition: left .7s, color .7s;
+}
+
+.nav-container a:hover{
+    left:0.5rem;
+    cursor: pointer;
+    color:#FF006B;
+}
+.nav-container a.selected{
+    color:#FF006B;
+    left: 0;
+}
+
+.nav-container h2{
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+    font-weight: 600;
+}
+
+
+.nav-heading{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+

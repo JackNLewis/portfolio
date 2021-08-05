@@ -1,0 +1,46 @@
+.card-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 22rem;
+    text-align: center;
+    bottom: 0;
+    cursor: pointer;
+    transition: bottom 0.5s ease;
+}
+
+
+.card-container h1{
+    position: relative;
+    margin: 0;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.card-container h1:after{
+    position: absolute;
+    width: 120%;
+    left: calc(-10%);
+    bottom: 0.5rem;
+    content: " ";
+    border-bottom: 2px solid #FF006B;
+}
+
+
+.card-container p{
+    margin: 0;
+    width: 15rem;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-top: 0.5rem;
+}
+
+.card-container img{
+    position: absolute;
+    bottom: 0;
+    padding-top: 2rem;
+    width: 10rem;
+    height: 10rem;
+}
