@@ -1,13 +1,20 @@
 .portfolio-container{
     position: relative;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-info{
+    text-align: center;
+    padding: 3rem;
 }
 
 .flipcard-container{
-    display: grid;
-    width: 100%;
+    display: flex;
+    width: clamp(5rem, 50rem,90%);
     justify-content: center;
-    grid-template-columns: 25rem 25rem;
+    flex-wrap: wrap;
     margin-bottom: 3rem;
 }
 

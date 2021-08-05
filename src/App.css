@@ -1,7 +1,3 @@
-.App{
-
-}
-
 .test{
     display: block;
     height: 200vh;
@@ -19,4 +15,17 @@ button, input[type="submit"], input[type="reset"] {
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+}
+
+
+
+.topSubHead{
+    color: #FF006B;
+    margin: 0;
+}
+.mainHead{
+    font-size: 2.5rem;
+}
+.botSubHead{
+    font-weight: 300;
 }

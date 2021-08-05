@@ -69,9 +69,9 @@ function Skills() {
     return (
       <div className="skills-container">
         <div className="skill-info">
-          <h2>skills.</h2>
-          <h1>Here is what I have learnt so far.</h1>
-          <h3>These are some of the skills I have picked up since starting University</h3>
+          <h2 className="topSubHead">skills.</h2>
+          <h1 className="mainHead">Here is what I have learnt so far.</h1>
+          <h3 className="botSubHead">These are some of the skills I have picked up since starting University</h3>
         </div>
         
           <Swiper slidesPerView={5} spaceBetween={15} pagination={{
