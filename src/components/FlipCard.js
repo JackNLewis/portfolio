@@ -15,7 +15,7 @@ function FlipCard(props){
             <div className={!isHovered ? "flipcard-info" : "flipcard-info hovered"}>
                 <h1>Logistic Regression Model</h1>
                 <p>I created a logistic regression model using numpy to predict the odds of surviving on the titanic.</p>
-                <h2>Read More</h2>
+                <h2>Read More</h2> 
             </div>
            
         </div>

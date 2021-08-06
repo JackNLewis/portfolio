@@ -8,7 +8,8 @@ import cssIcon from "../images/css.png"
 import jsIcon from "../images/javascript.png"
 import cIcon from "../images/c.png"
 import "../styles/skills.css";
-// Import Swiper React components
+
+// // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -19,6 +20,11 @@ import "swiper/components/pagination/pagination.min.css"
 import SwiperCore, {
   Pagination
 } from 'swiper/core';
+
+
+// install Swiper modules
+SwiperCore.use([Pagination]);
+
 
 const items =
   [
@@ -60,12 +66,19 @@ const items =
     }
   ];
 
-// install Swiper modules
-SwiperCore.use([Pagination]);
-
 
 
 function Skills() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3
+  };
+
+
+
     return (
       <div className="skills-container">
         <div className="skill-info">
@@ -73,8 +86,8 @@ function Skills() {
           <h1 className="mainHead">Here is what I have learnt so far.</h1>
           <h3 className="botSubHead">These are some of the skills I have picked up since starting University</h3>
         </div>
-        
-          <Swiper slidesPerView={5} spaceBetween={15} pagination={{
+       
+          <Swiper slidesPerView={1} spaceBetween={15} pagination={{
             "clickable": true
           }} breakpoints={{
             "640": {
@@ -94,14 +107,16 @@ function Skills() {
             {items.map(item => 
               <SwiperSlide key={item.id}>        
                 <SkillCard key={item.id} title={item.title} text={item.text} img={item.img}/>
+                
               </SwiperSlide>
             )}
           </Swiper>
+
+
+
       </div>
     );
 }
 
 
 export default Skills;
-
-// <SkillCard key={item.id} title={item.title} text={item.text} img={item.img}/>

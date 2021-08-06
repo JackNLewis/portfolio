@@ -12,9 +12,14 @@
 
 .flipcard-container{
     display: flex;
-    width: clamp(5rem, 50rem,90%);
-    justify-content: center;
+    width: clamp(5rem, 70%, 60rem);
     flex-wrap: wrap;
     margin-bottom: 3rem;
 }
 
+
+@media (max-width: 768px) {
+    .flipcard-container{
+        width: 80%;
+    }
+}
