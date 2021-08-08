@@ -69,13 +69,6 @@ const items =
 
 
 function Skills() {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3
-  };
 
 
 
@@ -107,7 +100,7 @@ function Skills() {
             {items.map(item => 
               <SwiperSlide key={item.id}>        
                 <SkillCard key={item.id} title={item.title} text={item.text} img={item.img}/>
-                
+      
               </SwiperSlide>
             )}
           </Swiper>

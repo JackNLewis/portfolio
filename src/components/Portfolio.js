@@ -1,11 +1,19 @@
 import "../styles/portfolio.css";
 import FlipCard from "./FlipCard";
-import natureImg from "../images/port-photos/1.jpeg"
+import React, { useState, useEffect } from 'react';
 
-
-const items = [1,2,3,4];
 
 function Portfolio() {
+
+  const[data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch('http://jlewis.pythonanywhere.com/blog/?format=json')
+  .then(response => response.json())
+  .then(data => setData(data));
+  });
+
+
   return (
   <div className="portfolio-container">
     <div className="portfolio-info">
@@ -15,7 +23,9 @@ function Portfolio() {
         
     </div>
     <div className="flipcard-container">
-      {items.map((i) => <FlipCard img_src={require('../images/port-photos/' + i +'.jpeg').default}/>)}
+      {data.map((blog) => <FlipCard key={blog.id} img_src={blog.image} title={blog.title} desc={blog.description}/>)}
+{/*     
+      {data.map((blog) => <img src={blog.image}></img>)} */}
     </div>
 
   </div>
