@@ -8,7 +8,7 @@ function Portfolio() {
   const[data, setData] = useState([]);
 
   useEffect(() => {
-    fetch('http://jlewis.pythonanywhere.com/blog/?format=json')
+    fetch('https://jlewis.pythonanywhere.com/blog/?format=json')
   .then(response => response.json())
   .then(data => setData(data));
   });
