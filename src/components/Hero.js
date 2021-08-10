@@ -9,7 +9,7 @@ function Hero() {
           <h2>Hello, World.</h2>
           <h1>I'm Jack Lewis</h1>
           <h3>Computer Science Student | University of Birmingham</h3>
-          <Link activeClass="selected" smooth={true} to="portfolio-container" duration={500} className="explore-button">
+          <Link activeClass="selected" smooth={true} to="about-container" duration={500} className="explore-button">
             Explore My Work
           </Link>
         </div>

@@ -1,15 +1,47 @@
 .about-container{
     position: relative;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: white;
+    margin-bottom: 5rem;
 }
 
 .about-info{
-    padding: 3rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+    font-size: 1.2rem;
     text-align: center;
+}
+
+.about-info-pic{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.about-info-pic p{
+    height: clamp(10rem, 60%, 20rem);
+}
+
+
+.about-info img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    object-position: 0 40%;
+    margin-right: 2rem;
+}
+
+.about-para{
+    width: 30rem;
+    text-align: left;
+    font-size: 1.2rem;
+    color: #414141;
 }
 
 .about-content{
@@ -22,10 +54,12 @@
 
 .about-profile{
     width: 50%;
+    padding: 2rem;
 }
 
 .hobbies{
     width: 50%;
+    padding: 2rem;
 }
 
 .about-heading{
@@ -46,4 +80,72 @@
 .about-intro{
     width: 80%;
     margin-bottom: 3rem;
+    font-size: 1.2rem;
+}
+
+
+.about-buttons{
+    display: flex;
+}
+.about-buttons button{
+    margin: 2rem;
+    padding: 2rem;
+    width: 15rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: all 0.75s;
+    text-align: center;
+}
+
+.button1{
+    border: solid 4px #414141;
+    color: #414141;
+}
+
+.button1:hover{
+    border-color: #FF006B;
+    color: #FF006B;
+}
+
+.button2{
+    background-color: #414141;
+    color: white;
+}
+
+.button2:hover{
+    background-color: #1a1a1a;
+}
+
+@media (max-width: 768px) {
+    
+    .about-info-pic{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-info-pic p{
+        width: 80%;
+    }
+
+    .about-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-profile{
+        width: 100%;
+    }
+
+    .hobbies{
+        width: 100%;
+    }
+
+    .about-buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-buttons button{
+        margin: 1rem;
+    }
+
+
 }
