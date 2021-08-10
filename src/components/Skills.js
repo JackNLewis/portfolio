@@ -1,6 +1,6 @@
 
 import SkillCard from "./SkillCard";
-
+import Fade from 'react-reveal/Fade';
 import pythonIcon from "../images/python.png"
 import javaIcon from "../images/java.png"
 import htmlIcon from "../images/html5.png"
@@ -74,12 +74,13 @@ function Skills() {
 
     return (
       <div className="skills-container">
+          <Fade bottom>
         <div className="skill-info">
           <h2 className="topSubHead">skills.</h2>
           <h1 className="mainHead">Here is what I have learnt so far.</h1>
           <h3 className="botSubHead">These are some of the skills I have picked up since starting University</h3>
         </div>
-       
+        </Fade>
           <Swiper slidesPerView={1} spaceBetween={15} pagination={{
             "clickable": true
           }} breakpoints={{
@@ -96,16 +97,13 @@ function Skills() {
               "spaceBetween": 50
             }
           }} className="mySwiper">
-
             {items.map(item => 
               <SwiperSlide key={item.id}>        
                 <SkillCard key={item.id} title={item.title} text={item.text} img={item.img}/>
-      
               </SwiperSlide>
             )}
+            
           </Swiper>
-
-
 
       </div>
     );

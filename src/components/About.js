@@ -1,15 +1,14 @@
 import "../styles/about.css"
 import ProgressBar from "./ProgressBar";
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import Fade from 'react-reveal/Fade';
 import profileImg from "../images/profile.jpg"
+import { Link } from 'react-scroll'
 
+function About(props) {
 
-function About() {
-
-    const [active, setActive] = useState(false);
-
+    
     const { ref, inView, entry } = useInView({
         /* Optional options */
         triggerOnce: true,
@@ -18,9 +17,10 @@ function About() {
         threshold:0.8,
       });
 
+     
 return (
     <div className="about-container">
-        <Fade bottom fraction={1}>
+        <Fade bottom fraction={1} appear={props.scrollDown} >
         <div className="about-info">
             <h2 className="topSubHead">about.</h2>
             <h1 className="mainHead">Let me introduce myself.</h1>
@@ -63,7 +63,9 @@ return (
         </div>
         <Fade bottom fraction={1}>
             <div className="about-buttons">
+            <Link activeClass="selected" spy={true} smooth={true} to="contact-container" duration={500}>
                 <button className="button1">Hire Me</button>
+                </Link>
                 <button className="button2">Download CV</button>
             </div>
         </Fade>

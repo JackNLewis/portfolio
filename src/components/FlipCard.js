@@ -1,7 +1,6 @@
 import "../styles/flipCard.css"
 import React, { useState } from 'react';
-
-
+import Fade from "react-reveal/Fade"
 
 
 function FlipCard(props){
@@ -10,6 +9,7 @@ function FlipCard(props){
 
     return (
         <div className="flipcard" onMouseEnter={() => setHovered(true)} onMouseLeave={() =>setHovered(false)}>
+            
             <img src={props.img_src} className={!isHovered ? "" : "hovered"} alt="flipcard"></img>
             <div className={!isHovered ? "flipcard-info" : "flipcard-info hovered"}>
                 <h1>{props.title}</h1>

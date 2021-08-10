@@ -1,19 +1,13 @@
 
-
 .flipcard{
     --card-height: clamp(30rem,50vw,40rem);
-    width: 50%;
+    width: 100%;
     height: var(--card-height);
     position: relative;
     overflow: hidden;
     border-style:none;
 }
 
-@media (max-width: 600px) {
-    .flipcard{
-        width: 100%;
-    }
-}
 
 
 img{

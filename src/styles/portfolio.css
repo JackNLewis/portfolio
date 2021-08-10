@@ -17,9 +17,19 @@
     margin-bottom: 3rem;
 }
 
+.flipcard-container span{
+    width: 50%;
+}
+
 
 @media (max-width: 768px) {
     .flipcard-container{
         width: 80%;
     }
+
+    .flipcard-container span{
+        width:100%;
+    }
+        
 }
+
