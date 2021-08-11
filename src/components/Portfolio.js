@@ -16,21 +16,24 @@ function Portfolio() {
 
   return (
   <div className="portfolio-container">
-    <Fade bottom fraction={1} appear={true}>
+    
     <div className="portfolio-info">
       <h2 className="topSubHead">portfolio.</h2>
       <h1 className="mainHead">Here is some of the work I have done.</h1>
       <h3 className="botSubHead">These are some of the projects I have completed.</h3>    
     </div>
-    </Fade>
 
     <Fade bottom cascade appear={true}>
     <div className="flipcard-container">
-
-      {data.map((blog) => 
+      {
+      data.length !==0 ?
+      data.map((blog) => 
       <span key={blog.id}>
           <FlipCard key={blog.id} img_src={blog.image} title={blog.title} desc={blog.description}/>
-      </span>)}
+      </span>)
+    :
+    <h2 className="fetch-message">0 Results</h2>
+    }
     </div>
 
     </Fade>

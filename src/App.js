@@ -11,11 +11,6 @@ import React, { useEffect} from 'react';
 function App() {
  
     
-    
-    useEffect(() => {
-        console.log("reloaded")
-        document.body.scrollTop = 0;
-      }, [])
 
 return (
   <div className="App">

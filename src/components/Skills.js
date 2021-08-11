@@ -74,13 +74,11 @@ function Skills() {
 
     return (
       <div className="skills-container">
-          <Fade bottom>
         <div className="skill-info">
           <h2 className="topSubHead">skills.</h2>
           <h1 className="mainHead">Here is what I have learnt so far.</h1>
           <h3 className="botSubHead">These are some of the skills I have picked up since starting University</h3>
         </div>
-        </Fade>
           <Swiper slidesPerView={1} spaceBetween={15} pagination={{
             "clickable": true
           }} breakpoints={{

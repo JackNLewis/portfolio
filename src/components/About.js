@@ -1,8 +1,6 @@
 import "../styles/about.css"
 import ProgressBar from "./ProgressBar";
-// import React, { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
-import Fade from 'react-reveal/Fade';
 import profileImg from "../images/profile.jpg"
 import { Link } from 'react-scroll'
 
@@ -20,7 +18,6 @@ function About(props) {
      
 return (
     <div className="about-container">
-        <Fade bottom fraction={1} appear={props.scrollDown} >
         <div className="about-info">
             <h2 className="topSubHead">about.</h2>
             <h1 className="mainHead">Let me introduce myself.</h1>
@@ -29,9 +26,7 @@ return (
                 <p className="about-para">Hey, I'm Jack. I'm a third year computer science student. I enjoy building software and also building ai models to solve problems.</p>
             </div>
         </div>
-        </Fade>
         <div className="about-content">
-            <Fade bottom fraction={0.8}>
             <div className="about-profile">
                 <h1 className="about-heading">Profile</h1>
                 <p className="about-para">I am an hardworking and motivated individual who is always looking to improve my abilities.</p>
@@ -44,8 +39,6 @@ return (
                 <h1 className="about-subhead">COURSE:</h1>
                 <h2 className="about-thinhead">Artificial Intelligence and Computer Science BSc</h2>   
             </div>
-            </Fade>
-            <Fade bottom fraction={0.8}>
             <div className="hobbies" ref={ref}>
                 <h1 className="about-heading">Hobbies</h1>
                 <p className="about-para">When I'm not working these are a few of the hobbies I like to do in my free time.</p>
@@ -59,16 +52,14 @@ return (
                 <ProgressBar width={"70%"} progress={"70%"} active={inView}/>
                 
             </div>
-            </Fade>
         </div>
-        <Fade bottom fraction={1}>
+       
             <div className="about-buttons">
-            <Link activeClass="selected" spy={true} smooth={true} to="contact-container" duration={500}>
+                <Link activeClass="selected" spy={true} smooth={true} to="contact-container" duration={500}>
                 <button className="button1">Hire Me</button>
                 </Link>
                 <button className="button2">Download CV</button>
             </div>
-        </Fade>
     </div>
 );
 }
