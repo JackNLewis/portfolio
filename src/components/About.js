@@ -42,13 +42,13 @@ return (
             <div className="hobbies" ref={ref}>
                 <h1 className="about-heading">Hobbies</h1>
                 <p className="about-para">When I'm not working these are a few of the hobbies I like to do in my free time.</p>
-                <h1 className="about-subhead">WEIGHT LIFTING</h1>
+                <h1 className="about-subhead">CODING</h1>
                 <ProgressBar width={"70%"} progress={"90%"} active={inView}/>
                 <h1 className="about-subhead" >TENNIS</h1>
                 <ProgressBar width={"70%"} progress={"60%"} active={inView}/>
                 <h1 className="about-subhead">FILMS {"&"} TV</h1>
                 <ProgressBar width={"70%"} progress={"50%"} active={inView}/>
-                <h1 className="about-subhead">CODING</h1>
+                <h1 className="about-subhead">WEIGHT LIFTING</h1>
                 <ProgressBar width={"70%"} progress={"70%"} active={inView}/>
                 
             </div>
@@ -56,7 +56,7 @@ return (
        
             <div className="about-buttons">
                 <Link activeClass="selected" spy={true} smooth={true} to="contact-container" duration={500}>
-                <button className="button1">Hire Me</button>
+                <button className="button1">Contact Me</button>
                 </Link>
                 <button className="button2">Download CV</button>
             </div>

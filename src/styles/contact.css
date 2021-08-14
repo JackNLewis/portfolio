@@ -1,6 +1,5 @@
 .contact-container{
     position: relative;
-    height: 100vh;
     background-color: #1c1c1c;
     color: white;
 }
@@ -15,11 +14,11 @@
 
 .contact-input{
     position: relative;
-    margin: 0 10%;
+    margin: 0 auto;
     display: flex;
+    overflow: hidden;
     flex-direction: column;
-    width: 80%;
-
+    width: clamp(40rem,40vw,40vw);
     justify-content: center;
 }
 
@@ -29,9 +28,9 @@
     font-size: 1.1rem;
     caret-color: red;
     border-bottom-style: solid;
-    border-bottom-width: 1px;
+    border-bottom-width: 0.1rem;
     border-bottom-color: white;
-    color:white;
+    color:#b0b0b0;
     background-color: transparent;
     padding: 1rem;
     margin: 1.2rem 0;
@@ -49,8 +48,8 @@
     caret-color: red;
     border-bottom-style: solid;
     border-bottom-width: 1px;
-    border-bottom-color: white;
-    color:white;
+    border-bottom-color: #b0b0b0;
+    color:#b0b0b0;
     background-color: transparent;
     padding: 1rem;
     margin: 1.2rem 0;
@@ -65,7 +64,6 @@
 .submit-button{
     font-weight: 700;
     width: 100%;
-    
     padding: 1.5rem 0;
     background-color: #FF006B;
     transition: background-color 0.5s;
@@ -74,3 +72,11 @@
 .submit-button:hover{
     background-color: #c40052;
 }
+
+@media (max-width: 768px) {
+    .contact-input{
+        width: 85%;
+    }
+        
+}
+

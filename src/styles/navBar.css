@@ -32,7 +32,7 @@
 .nav-container a{
     position: relative;
     left: 0;
-    transition: left .7s, color .7s;
+    transition: left .5s, color .5s;
 }
 
 .nav-container a:hover{
