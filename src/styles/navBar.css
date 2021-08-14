@@ -57,6 +57,23 @@
     justify-content: center;
 }
 
+@media (max-width: 768px){
+    .nav-container{
+        left: 0;
+        width: 100%;
+        
+    }
+
+    .nav-heading{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .nav-heading h1{
+        padding-left: 1.2rem;
+    }
+}
 
 
 

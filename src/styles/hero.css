@@ -62,3 +62,27 @@
     height: 100%;
     z-index: 1;
 }
+
+.hero-icons{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 2rem;
+    z-index: 5;
+}
+
+.hero-icons svg{
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 0 1rem;
+    --fill-color: white;
+}
+
+.hero-icons svg:hover{
+    --fill-color:#FF006B;
+}
+
+.hero-icons svg path{
+    fill:var(--fill-color);
+    transition: all 0.5s;
+}

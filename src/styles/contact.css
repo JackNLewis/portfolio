@@ -47,7 +47,7 @@
     border: none;
     caret-color: red;
     border-bottom-style: solid;
-    border-bottom-width: 1px;
+    border-bottom-width: 0.1rem;
     border-bottom-color: #b0b0b0;
     color:#b0b0b0;
     background-color: transparent;
@@ -73,9 +73,55 @@
     background-color: #c40052;
 }
 
+.contact-cards{
+    margin: 0 auto;
+    padding: 4rem 0;
+    width: clamp(45rem,70%,80rem);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.contact-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25rem;
+    padding: 2rem 0;
+}
+
+.contact-card svg{
+    width: 4rem;
+    height: 4rem;
+    padding-bottom: 1rem;
+}
+
+.contact-card svg path{
+    fill: #e6e6e6;
+}
+
+.contact-card h1{
+    color: #FF006B;
+    padding: 1rem;
+    font-size: 1.8rem;
+}
+
+.contact-card h2{
+    margin: 0;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
 @media (max-width: 768px) {
     .contact-input{
         width: 85%;
+    }
+
+    .contact-cards{
+        flex-direction: column;
+        align-items: center;
+
     }
         
 }
