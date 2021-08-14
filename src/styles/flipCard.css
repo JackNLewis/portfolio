@@ -8,8 +8,6 @@
     border-style:none;
 }
 
-
-
 img{
     width: 100%;
     height: var(--card-height);
@@ -24,11 +22,14 @@ img{
 
 .flipcard-info{
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     opacity: 0;
     top: 0;
     width: 100%;
     height: var(--card-height);
-    
     background-color: rgba(0,0,0,0.65);
     color: white;
     transition: all 0.6s ease;
@@ -39,52 +40,38 @@ img{
 }
 
 .flipcard-info h1{
-    position: absolute;
-    top: 1.5rem;
-    left: 1.5rem;
+    position: relative;
+    left: -100%;
+    font-size: 2.5rem;
+    
+    text-align: center;
+    font-weight: 800;
     width: calc(100% - 7rem);
-    color: #FF006B;
-}
-
-.flipcard-info p{
-    width: clamp(5rem,70%,70%);
-    height: 15rem;
-    font-size: 1.3rem;
-    position: absolute;
-    padding-top: 1rem;
-    top: 7rem;
-    left: 1.5rem;
+    color: #f0f0f0;
+    transition: left 0.5s;
 }
 
 .flipcard-info h2{
-    position: absolute;
-    bottom: 4rem;
-    color: #FF006B;
+    position: relative;
+    left: -100%;
+    margin: 0;
     padding-top: 0.5rem;
-    font-weight: 500;
-    left:1.5rem;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 400;
+    width: calc(100% - 7rem);
+    color: #d1d1d1;
+    transition: left 0.5s;
 }
 
-.flipcard-info h2:after{
-    position: absolute;
-    content: " ";
-    width: 5rem;
-    height: 0.3rem;
+.flipcard-info h1.hovered{
     left: 0;
-    top: -0.1rem;
-    background-color: #FF006B;
 }
 
-.flipcard-info::before{
-    position: absolute;
-    display: block;
-    content: " ";
-    width: clamp(2rem,20%,5rem);
-    height: 7rem;
-    top: 0;
-    right: 0;
-    background-color: #FF006B;
-    z-index: 5;
+.flipcard-info h2.hovered{
+    left: 0;
 }
+
+
 
 

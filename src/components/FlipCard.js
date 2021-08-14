@@ -12,9 +12,8 @@ function FlipCard(props){
             
             <img src={props.img_src} className={!isHovered ? "" : "hovered"} alt="flipcard"></img>
             <div className={!isHovered ? "flipcard-info" : "flipcard-info hovered"}>
-                <h1>{props.title}</h1>
-                <p>{props.desc}</p>
-                <h2>Read More</h2> 
+                <h1 className={!isHovered ? "" : "hovered"}>{props.title}</h1>
+                <h2 className={!isHovered ? "" : "hovered"}>Artificial Intelligence</h2>
             </div>
            
         </div>
