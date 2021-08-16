@@ -1,6 +1,6 @@
 import "../styles/flipCard.css"
 import React, { useState } from 'react';
-import Fade from "react-reveal/Fade"
+
 
 
 function FlipCard(props){

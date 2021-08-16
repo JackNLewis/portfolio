@@ -7,7 +7,7 @@ import { Link } from 'react-scroll'
 function About(props) {
 
     
-    const { ref, inView, entry } = useInView({
+    const { ref, inView } = useInView({
         /* Optional options */
         triggerOnce: true,
         trackVisibility: true,
@@ -22,7 +22,7 @@ return (
             <h2 className="topSubHead">about.</h2>
             <h1 className="mainHead">Let me introduce myself.</h1>
             <div className="about-info-pic">
-                <img src={profileImg}></img>
+                <img src={profileImg} alt="profile"></img>
                 <p className="about-para">Hey, I'm Jack. I'm a third year computer science student. I enjoy building software and also building ai models to solve problems.</p>
             </div>
         </div>

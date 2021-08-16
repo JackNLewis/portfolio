@@ -1,6 +1,5 @@
 
 import SkillCard from "./SkillCard";
-import Fade from 'react-reveal/Fade';
 import pythonIcon from "../images/python.png"
 import javaIcon from "../images/java.png"
 import htmlIcon from "../images/html5.png"

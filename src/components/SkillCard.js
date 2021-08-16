@@ -1,5 +1,5 @@
 import "../styles/skill-card.css";
-import Fade from 'react-reveal/Fade';
+
 function SkillCard(props) {
     console.log(props.img_src);
     return (
