@@ -21,7 +21,7 @@ function Hero() {
     
     return (
     <div className="hero-container">
-        <img src={bgImg} className="parralax-img" style={{opacity: hideBg}}></img>
+        <img src={bgImg} className="parralax-img" alt="" style={{opacity: hideBg}}></img>
         <div className="overlay"></div>
         
         <div className="hero-content">

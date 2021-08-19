@@ -1,0 +1,22 @@
+.blog-container{
+    width: 70vw;
+    margin: 0 10vw;
+}
+
+.blog-header{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.blog-content{
+    width: 40%;
+    font-size: 1.5rem;
+}
+.blog-container img{
+    height: auto;
+    height: 50vh;
+    width: 50vw;
+    object-position: center center;
+}

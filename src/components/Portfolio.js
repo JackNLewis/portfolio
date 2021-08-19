@@ -2,6 +2,9 @@ import "../styles/portfolio.css";
 import FlipCard from "./FlipCard";
 import React, { useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
+import {Link } from "react-router-dom";
+  
+  
 
 function Portfolio() {
 
@@ -29,7 +32,9 @@ function Portfolio() {
       data.length !==0 ?
       data.map((blog) => 
       <span key={blog.id}>
+          <Link to={`/blog/${blog.id}`}>
           <FlipCard key={blog.id} img_src={blog.image} title={blog.title} desc={blog.description}/>
+          </Link>
       </span>)
     :
     <h2 className="fetch-message">0 Results</h2>
