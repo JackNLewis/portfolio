@@ -15,10 +15,10 @@ return (
     <Router>
         <ScrollToTop />
         <Switch>
-            <Route exact path="/">
+            <Route exact path="/portfolio">
                 <Home />
             </Route>
-            <Route exact path="/blog/:id">
+            <Route exact path="/portfolio/blog/:id">
                 <Blog />
             </Route>
         </Switch>
