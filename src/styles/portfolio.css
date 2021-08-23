@@ -11,6 +11,23 @@
     padding: 3rem;
 }
 
+.blog-overlay{
+    position: fixed;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    z-index: -1;
+    background-color: rgba(0,0,0,0.8);
+    width: 100vw;
+    transition: opacity 0.5s;
+    height: 100vh;
+}
+
+.blog-overlay.show{
+    opacity: 1;
+    transition: opacity 0.5s, z-index 0.5s;
+    z-index: 11;
+}
 .flipcard-container{
     display: flex;
     width: clamp(5rem, 70%, 60rem);

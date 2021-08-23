@@ -1,7 +1,7 @@
 import "../styles/skill-card.css";
 
 function SkillCard(props) {
-    console.log(props.img_src);
+    
     return (
       <div className="card-container">
        

@@ -7,7 +7,7 @@
     height: 19rem;
     overflow: hidden;
     transition: height .5s;
-    z-index: 10;
+    z-index: 4;
 }
 
 .nav-container.opened{

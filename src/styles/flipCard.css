@@ -6,6 +6,7 @@
     position: relative;
     overflow: hidden;
     border-style:none;
+    cursor: pointer;
 }
 
 img{
@@ -43,7 +44,6 @@ img{
     position: relative;
     left: -100%;
     font-size: 2.5rem;
-    
     text-align: center;
     font-weight: 800;
     width: calc(100% - 7rem);

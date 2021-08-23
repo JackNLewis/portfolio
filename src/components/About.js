@@ -12,7 +12,7 @@ function About(props) {
         triggerOnce: true,
         trackVisibility: true,
         delay:1000,
-        threshold:0.8,
+        threshold:0.5,
       });
 
      
