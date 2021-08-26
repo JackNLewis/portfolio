@@ -21,9 +21,7 @@ function Portfolio() {
         setBlog(!selectedBlog);
         console.log("in click function")
         for(let i=0;i<data.results.length;i++){
-            console.log(data[i]);
             if(data.results[i].id === id){
-                console.log("matches key " + id);
                 setCurrBlog(data.results[i]);
                 break;
             }
