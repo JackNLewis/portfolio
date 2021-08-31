@@ -26,3 +26,14 @@
 .footer-icons svg path{
     fill: white;
 }
+
+
+@media (max-width: 768px) {
+    .footer-container{
+        flex-direction: column;
+    }
+    .footer-icons{
+        padding: 1rem;
+        justify-content: center;
+    }
+}

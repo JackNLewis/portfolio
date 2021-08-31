@@ -83,7 +83,7 @@
     z-index: 5;
 }
 
-.hero-icons svg{
+.hero-icons a svg{
     height: 2rem;
     width: 2rem;
     padding: 0 1rem;
@@ -91,11 +91,11 @@
     --fill-color: white;
 }
 
-.hero-icons svg:hover{
+.hero-icons a svg:hover{
     --fill-color:#FF006B;
 }
 
-.hero-icons svg path{
+.hero-icons  a svg path{
     fill:var(--fill-color);
     transition: all 0.5s;
 }
