@@ -12,13 +12,12 @@
     flex-direction: column;
     align-items: center;
     padding-top: 2rem;
-    font-size: 1.2rem;
     text-align: center;
 }
 
 .about-info-pic{
-    padding-top: 3rem;
-    padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -87,7 +86,7 @@
     display: flex;
 }
 .about-buttons button{
-    margin: 2rem;
+    margin: 1rem;
     padding: 2rem;
     width: 15rem;
     font-size: 1.5rem;

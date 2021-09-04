@@ -3,6 +3,8 @@ import ProgressBar from "./ProgressBar";
 import { useInView } from 'react-intersection-observer';
 import profileImg from "../images/profile.jpg"
 import { Link } from 'react-scroll'
+import Pdf from '../resume.pdf'
+
 
 function About(props) {
 
@@ -58,7 +60,9 @@ return (
                 <Link activeClass="selected" spy={true} smooth={true} to="contact-container" duration={500}>
                 <button className="button1">Contact Me</button>
                 </Link>
-                <button className="button2">Download CV</button>
+                <button className="button2">
+                    <a href={Pdf} target="_blank">Download CV</a>
+                </button>
             </div>
     </div>
 );
