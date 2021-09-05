@@ -2,20 +2,21 @@ import "../styles/portfolio.css";
 import FlipCard from "./FlipCard";
 import React, { useState, useEffect } from 'react';
 import BlogCard from "./BlogCard";
-  
+import Pagination from '@material-ui/lab/Pagination';
   
 
 function Portfolio() {
 
     const[data, setData] = useState([]);
     const[selectedBlog, setBlog] = useState(false);
-    const[currentBlog, setCurrBlog] = useState({})
+    const[currentBlog, setCurrBlog] = useState({});
+    const[page, setPage] = useState(1);
 
     useEffect(() => {
         fetch('https://jlewis.pythonanywhere.com/blog/?format=json')
-        .then(response => response.json())
+        .then(response =>  response.json())
         .then(data => setData(data));
-    });
+    }, []);
   
     function clickFunc(id){
         setBlog(!selectedBlog);
@@ -27,6 +28,17 @@ function Portfolio() {
             }
         }
     }
+
+    const handleChange = (event, value) => {
+        fetch(`http://jlewis.pythonanywhere.com/blog/?page=${value}&format=json`)
+        .then(response =>  response.json())
+        .then(data => {
+            setData(data)
+            console.log(data.results)
+        });
+        // setData([]);
+        setPage(value);
+    };
 
     return (
     <div className="portfolio-container">
@@ -45,11 +57,11 @@ function Portfolio() {
             <span key={blog.id}>
                 <FlipCard key={blog.id} id={blog.id} img_src={blog.image} title={blog.title} desc={blog.description} clickFunc={clickFunc}/>
             </span>)
-        :
-        <h2 className="fetch-message">0 Results</h2>
-        }
-    </div>
-
+            :
+            <h2 className="fetch-message">0 Results</h2>
+            }
+        </div>
+        <Pagination count={data.total_pages} page={page} onChange={handleChange}/>
 
   </div>
   );
