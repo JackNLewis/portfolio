@@ -30,7 +30,7 @@ function Portfolio() {
     }
 
     const handleChange = (event, value) => {
-        fetch(`http://jlewis.pythonanywhere.com/blog/?page=${value}&format=json`)
+        fetch(`https://jlewis.pythonanywhere.com/blog/?page=${value}&format=json`)
         .then(response =>  response.json())
         .then(data => {
             setData(data)
