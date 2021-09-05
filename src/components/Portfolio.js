@@ -3,7 +3,7 @@ import FlipCard from "./FlipCard";
 import React, { useState, useEffect } from 'react';
 import BlogCard from "./BlogCard";
 import Pagination from '@material-ui/lab/Pagination';
-  
+import { Link, animateScroll } from 'react-scroll'
 
 function Portfolio() {
 
@@ -36,6 +36,7 @@ function Portfolio() {
             setData(data)
             console.log(data.results)
         });
+        document.getElementsByClassName("portfolio-container")[0].scrollIntoView();
         // setData([]);
         setPage(value);
     };
