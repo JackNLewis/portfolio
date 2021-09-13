@@ -61,7 +61,7 @@ return (
                 <button className="button1">Contact Me</button>
                 </Link>
                 <button className="button2">
-                    <a href={Pdf} target="_blank">Download CV</a>
+                    <a href={Pdf} target="_blank" rel="noreferrer">Download CV</a>
                 </button>
             </div>
     </div>

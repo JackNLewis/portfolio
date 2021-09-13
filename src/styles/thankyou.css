@@ -1,0 +1,46 @@
+.thankyou-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    background-color: #1c1c1c;
+}
+
+.thankyou-inner{
+    padding: 1rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 80vw;
+    max-width: 35rem;
+    height: 15rem;
+    border-radius: 1rem;
+    border: #FF006B 0.1rem solid;
+}
+
+.thankyou-inner h1{
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.thankyou-inner h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.thankyou-inner h3{
+    cursor: pointer;
+    background-color: #FF006B;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 12rem;
+    margin: 0 auto;
+    transition: background-color 0.5s ease;
+}
+.thankyou-inner h3:hover{
+    background-color: #e0005e;
+}

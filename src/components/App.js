@@ -1,34 +1,30 @@
 import '../styles/App.css';
 import Home from "./Home"
+import ThankYou from './ThankYou'
 // import Blog from "./Blog"
 
-// import {
-//     BrowserRouter as Router,
-//     Switch,
-//     Route,
-//   } from "react-router-dom";
-// import ScrollToTop from './ScrollToTop';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+  } from "react-router-dom";
   
 function App() {
 return (
   <div className="App">
-      <Home />
-   
+      <Router>
+            <Switch>
+                <Route exact path="/portfolio">
+                    <Home />
+                </Route>
+                <Route exact path="/portfolio/thankyou">
+                    <ThankYou />
+                </Route>
+            </Switch>
+        </Router>
   </div>
 );
 }
 
 export default App;
 
-
- /* <Router>
-        <ScrollToTop />
-        <Switch>
-            <Route exact path="/portfolio">
-                <Home />
-            </Route>
-            <Route exact path="/portfolio/blog/:id">
-                <Blog />
-            </Route>
-        </Switch>
-    </Router> */

@@ -1,6 +1,8 @@
 import "../styles/contact.css";
 
+
 function Contact() {
+    
     return (
       <div className="contact-container">
         <div className="contact-info">
@@ -8,13 +10,15 @@ function Contact() {
             <h1 className="mainHead">Feel free to contact me.</h1>
             <h3 className="botSubHead">If you have any questions for me don't hesitate to get in touch.</h3>
         </div>
-        <div className="contact-input">
-            <input type="text"  className="input-field" placeholder="Name"></input>
-            <input type="text"  className="input-field" placeholder="Email"></input>
-            <input type="text"  className="input-field" placeholder="Subject"></input>
-            <textarea rows="10" className="input-message" placeholder="Message"></textarea>
-            <button className="submit-button">Submit</button>
-        </div>
+        <form className="contact-input" action="https://formsubmit.io/send/jacklewis2809@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="https://localhost:3000/portfolio/thankyou"/>
+            <input type="text"  className="input-field" placeholder="Name" name='name' required></input>
+            <input type="text"  className="input-field" placeholder="Email" name='email' required></input>
+            <input type="text"  className="input-field" placeholder="Subject" name='subject' required></input>
+            <textarea rows="10" className="input-message" placeholder="Message" name='message' required></textarea>
+            <button className="submit-button" type='submit' >Submit</button>
+        </form>
         <div className="contact-cards">
             
             <div className="contact-card">
