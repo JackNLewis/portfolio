@@ -1,8 +1,24 @@
+import emailjs from 'emailjs-com';
 import "../styles/contact.css";
-
+import React, { useState } from 'react';
 
 function Contact() {
-    
+
+    const [emailMsg, setEmailMsg] = useState('') 
+    function sendEmail(e){
+        e.preventDefault();
+        
+        console.log('sending email')
+        emailjs.sendForm('service_66wqu1k', 'template_dkxs8sb', e.target, 'user_Bu8YkzRL6aJcdBoEQ4UGR')
+        .then((result) => {
+            setEmailMsg('Thank You for getting in touch. I will get back to you as fast as possible.')
+            document.getElementsByClassName('contact-input')[0].reset();
+        }, (error) => {
+            setEmailMsg('Something didnt quite work there. Try again.')
+        });
+    }
+
+
     return (
       <div className="contact-container">
         <div className="contact-info">
@@ -10,14 +26,14 @@ function Contact() {
             <h1 className="mainHead">Feel free to contact me.</h1>
             <h3 className="botSubHead">If you have any questions for me don't hesitate to get in touch.</h3>
         </div>
-        <form className="contact-input" action="https://mailthis.to/jacklewis2809@gmail.com" method="POST">
-     
-            <input type="text"  className="input-field" placeholder="Name" name='name' required></input>
-            <input type="text"  className="input-field" placeholder="Email" name='email' required></input>
+        <form className="contact-input" onSubmit={sendEmail}>
+            <input type="text"  className="input-field" placeholder="Name" name='from_name' required></input>
+            <input type="text"  className="input-field" placeholder="Email" name='from_email' required></input>
             <input type="text"  className="input-field" placeholder="Subject" name='subject' required></input>
             <textarea rows="10" className="input-message" placeholder="Message" name='message' required></textarea>
-            <button className="submit-button" type='submit' >Submit</button>
+            <button className="submit-button" type='submit' >Submit</button>  
         </form>
+        <p className='status-message'>{emailMsg}</p>
         <div className="contact-cards">
             
             <div className="contact-card">

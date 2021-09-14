@@ -11,7 +11,7 @@ function ThankYou(){
             <h2>
                 I will respond as soon as possible.
             </h2>
-            <Link to='/portfolio'>
+            <Link to='/'>
                 <h3>Return to main page</h3>
             </Link>
             
