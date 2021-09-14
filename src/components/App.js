@@ -14,10 +14,10 @@ return (
   <div className="App">
       <Router>
             <Switch>
-                <Route exact path="/portfolio">
+                <Route exact path="/">
                     <Home />
                 </Route>
-                <Route exact path="/portfolio/thankyou">
+                <Route exact path="/thankyou">
                     <ThankYou />
                 </Route>
             </Switch>
