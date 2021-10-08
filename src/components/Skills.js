@@ -30,25 +30,25 @@ const items =
     {
     id: 1,
     title: "Python",
-    text : "I haver used python to create machine learning models and also websites. this website uses a api i created using djangoi for the blog posts",
+    text : "I've used python to build various machine learning models and also websites using the web framework Django.",
     img: pythonIcon
     },
     {
       id: 2,
       title: "Java",
-      text : "Java was the first language I learnt at University and is probably the language I feel most comfortable with. During my second year I created a game using Javafx",
+      text : "Java was the first language I learned at University and is probably the language I feel most comfortable with. During my second year, I created a game using JavaFX.",
       img: javaIcon
     },
     {
       id: 3,
       title: "HTML",
-      text: "I have used html to create various websites. It was actually the first prograsmming i ever learnt in secondary school.",
+      text: "I have used HTML to create various websites. It was actually the first programming I ever learned in secondary school.",
       img: htmlIcon
     },
     {
       id: 4,
       title: "CSS",
-      text: "Css Is a muist know language for web developement. Without it it is extremely hard to creatre nice looking websites",
+      text: "CSS is a must-know language for web development. Without it, it is extremely hard to create nice looking websites",
       img: cssIcon
     },
     {
@@ -60,7 +60,7 @@ const items =
     {
       id:6,
       title: "C",
-      text: "I learnt C during my second year of unioversity. We used it to create various kernel applications",
+      text: "I learned C during my second year of university. We used it to create various kernel applications",
       img: cIcon
     }
   ];
